@@ -10,9 +10,7 @@ export const getSyncToken = (url, manager, identity) => {
 };
 
 export const getSyncDoc = R.curry((docCallback, docName, token, options) => {
-  const clientOptions = {
-    logLevel: "info"
-  };
+  const clientOptions = { logLevel: "info" };
   const client = new SyncClient(token, clientOptions);
 
   client.on("connectionStateChanged", state => {
@@ -20,7 +18,8 @@ export const getSyncDoc = R.curry((docCallback, docName, token, options) => {
   });
 
   const docOptions = {id: docName, ...options};
-  return client.document(docOptions).then(doc => {
+  return client.document(docOptions)
+  .then(doc => {
     console.log('getSyncClientAndDoc: opened doc:', {sid: doc.sid});
     doc.on("updated", docCallback);
     return doc;
