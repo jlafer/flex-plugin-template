@@ -1,6 +1,6 @@
-# Your custom Twilio Flex Plugin
+# My Twilio Flex Plugin Template
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
+This is a template Twilio Flex Plugin, demonstrating many of the typical coding techniques.
 
 ## Setup
 
@@ -12,20 +12,6 @@ cd
 # If you use npm
 npm install
 ```
-
-Next, please install the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) by running:
-
-```bash
-brew tap twilio/brew && brew install twilio
-```
-
-Finally, install the [Flex Plugin extension](https://github.com/twilio-labs/plugin-flex/tree/v1-beta) for the Twilio CLI:
-
-```bash
-twilio plugins:install @twilio-labs/plugin-flex@beta
-```
-
 ## Development
 
-Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
-
+Find all occurrences of TODO in the code. These require some editing.
