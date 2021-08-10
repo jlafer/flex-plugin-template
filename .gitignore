@@ -56,7 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
-.env.*
+
+# TODO
+# the tempalte author's .env file used for testing; change this to ignore your own .env files!!!
+.env.DemoFlex
 
 # next.js build output
 .next
@@ -65,3 +68,9 @@ typings/
 appConfig.js
 pluginsService.js
 build/
+
+# Mac files
+.DS_Store
+
+# project files
+notes.txt

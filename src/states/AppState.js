@@ -1,11 +1,11 @@
 import {
-  SET_SERVERLESS_URI, SET_CURRENT_TASK, SET_SYNC_TOKEN,
+  SET_SERVERLESS_URI, SET_CURRENT_TASK, SET_SYNC_CLIENT,
 } from './actions';
 
 const initialState = {
   currentTask: null,
   serverlessUri: null,
-  syncToken: null
+  syncClient: null
 };
 
 export default function reduce(state = initialState, action) {
@@ -20,10 +20,10 @@ export default function reduce(state = initialState, action) {
         ...state,
         currentTask: action.payload
       };
-    case SET_SYNC_TOKEN:
+    case SET_SYNC_CLIENT:
       return {
         ...state,
-        syncToken: action.payload
+        syncClient: action.payload
       };
     default:
       return state;
