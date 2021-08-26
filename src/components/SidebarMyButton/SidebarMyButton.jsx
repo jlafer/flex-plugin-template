@@ -1,8 +1,7 @@
 import React from 'react';
 import { Actions, Manager, SideLink } from "@twilio/flex-ui";
-import {setMyPageState} from '../../states';
+import {namespace, setMyPageState} from '../../states';
 import { MyIcon, MyIconActive } from "./MyIcon";
-import {namespace} from '../../states';
 
 export default class SidebarMyButton extends React.Component {
 

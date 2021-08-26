@@ -1,6 +1,6 @@
 {
   "name": "flex-plugin-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A template for building Twilio Flex plugins",
   "private": true,
   "scripts": {

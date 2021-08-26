@@ -19,6 +19,8 @@ npm install
   - TemplatePlugin --> new plugin class name
   - plugin-template --> new plugin name
 - There are explanatory comments that start with the word "Note" throughout the code. Feel free to read and delete these.
+- Change the `name` and `description` of your plugin in the `package.json` file.
+- Copy appConfig.example.js in `public` to appConfig.js and ake any changes you need.
 
 ### Client UI
 The template contains code for a variety of use cases. Some should be useful generally whereas other code will demonstrate a technique but you will need to make changes to suit your particulars. For example, it demonstrates showing a CRM in Panel2 and it does this with Hubspot. So you will probably need to modify this part of the template.
@@ -37,4 +39,7 @@ Run `twilio flex:plugins --help` to see all the commands currently supported by 
 
 ## Deploy
 The plugin can be built and deployed with the `deploy` command of the Flex CLI. To be activated in your Flex project runnning at `flex.twilio.com` you must use the `release` command. This allows you to install this and, optionally, other Flex plugins together. Again, refer to the docs cited above for more information.
+
+## WARNING
+This code is supplied on a best-effort basis, without warranty, and should be carefully reviewed and tested prior to use. It is provided for instructional purposes only. Also, it makes use of a personal npm package by the author (i.e., `jlafer-flex-util`). That package should not be treated as production-grade and you are advised to use with care.
 
