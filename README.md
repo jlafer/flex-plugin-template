@@ -38,6 +38,13 @@ Similarly, the client application depends on environment variables during develo
 Run `twilio flex:plugins --help` to see all the commands currently supported by the Flex Plugins CLI. For further details refer to documentation on the [Flex Plugins CLI docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
 
 ## Deploy
+To deploy the functions for this plugin, use the Twilio CLI and the Serverless Toolkit plugin while in the `plugin-serverless` folder. First, ensure that the CLI is using the correct Twilio project; you can verify that by running `twilio profiles:list`. The following command will deploy the functions to a service environment on the Twilio Serverless platform:
+```
+twilio serverless:deploy
+```
+
+Use the generated service environment domain name as the value for `REACT_APP_SERVERLESS_URI` in the appropriate .env file in the parent (plugin) folder.
+
 The plugin can be built and deployed with the `deploy` command of the Flex CLI. To be activated in your Flex project runnning at `flex.twilio.com` you must use the `release` command. This allows you to install this and, optionally, other Flex plugins together. Again, refer to the docs cited above for more information.
 
 ## WARNING
